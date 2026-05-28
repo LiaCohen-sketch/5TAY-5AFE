@@ -4,3 +4,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#header-container{
+    display: flex;
+    flex-direction: column;
+}
+.folders {
+    width:100px;
+    height:70px;
+}
