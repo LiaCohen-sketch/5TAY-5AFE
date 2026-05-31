@@ -22,8 +22,8 @@ header.innerHTML = `
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <link alt="stylesheet" href="../staysafe.css">
-            <script src="/header/header.js"></script>
+            <link alt="stylesheet" href="/staysafe.css">
+            <script src="/header.js"></script>
         </head>
         <style>
 
