@@ -33,7 +33,10 @@ header.innerHTML = `
                 gap:40px;
                 float: right;
                 padding: 60px;
-                margin-top:-200px;
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 1000;
             }
 
             img{
@@ -45,7 +48,7 @@ header.innerHTML = `
         <body>
             
             <div id="header-container">
-                <div class="folders" id="urlChecker">
+                <div class="folders" id="URLchecker">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL Checker" onclick="URLcheck()">
                     <p>URL checker</p>
                 </div>
