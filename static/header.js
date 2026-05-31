@@ -9,12 +9,12 @@ function URLhistory(){
      fetch ("/api/history");
 }
 
-function URLlearnMore(){
-    fetch ("/api/learnMore.html");
+function URLinfo(){
+    fetch ("/api/learnMore");
 }
 
-function URLcheck(){
-    fetch ("/api/index.html");
+function URLchecker(){
+    fetch ("/");
 }
 
 let header = document.getElementById("header");
