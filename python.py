@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, request, jsonify #שרת, HTM
 
 from flask import request
 
-@app.rote('/')
+@app.route('/')
 def index():
     return render_template('index.html')
 

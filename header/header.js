@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function URLhistory(){
-    fetch ("/api/history");
+     fetch ("/api/history");
 }
 
 function URLlearnMore(){
@@ -23,7 +23,7 @@ header.innerHTML = `
     <html lang="en">
         <head>
             <link alt="stylesheet" href="../staysafe.css">
-            <script src="../header/header.js"></script>
+            <script src="/header/header.js"></script>
         </head>
         <style>
 
