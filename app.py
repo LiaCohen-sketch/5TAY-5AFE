@@ -4,7 +4,7 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api/index.html')
 def index():
     return render_template('index.html')
 

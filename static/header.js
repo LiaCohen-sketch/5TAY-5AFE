@@ -14,7 +14,7 @@ function URLlearnMore(){
 }
 
 function URLcheck(){
-    window.location.href = "/";
+    fetch ("/api/index.html");
 }
 
 let header = document.getElementById("header");
