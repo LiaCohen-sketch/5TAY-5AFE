@@ -13,7 +13,7 @@ def URLcheck():
     return render_template('history.html')
 
 @app.route('/api/learnMore')
-def URLcheck():
+def URLlearnMore():
     return render_template('learnMore.html')
 
 
