@@ -1,3 +1,3 @@
 function URLcheck(){
-    fetch
+    fetch ("/api/history");
 }
