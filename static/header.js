@@ -33,6 +33,7 @@ header.innerHTML = `
                 gap:40px;
                 float: right;
                 padding: 60px;
+                margin-top:-200px;
             }
 
             img{
