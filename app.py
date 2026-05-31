@@ -9,7 +9,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/api/history')
-def URLcheck():
+def URLhisrtory():
     return render_template('history.html')
 
 @app.route('/api/learnMore')
