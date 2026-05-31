@@ -13,7 +13,7 @@ function URLinfo(){
     fetch ("/api/learnMore");
 }
 
-function URLchecker(){
+function URLcheck(){
     fetch ("/");
 }
 
