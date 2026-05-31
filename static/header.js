@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function URLhistory(){
-     fetch ("/api/history");
+     window.location.href = "/api/history";
 }
 
 function URLinfo(){
-    fetch ("/api/learnMore");
+    window.location.href = "/api/learnMore";
 }
 
 function URLcheck(){
-    fetch ("/");
+    window.location.href = "/";
 }
 
 let header = document.getElementById("header");
@@ -22,8 +22,8 @@ header.innerHTML = `
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <link alt="stylesheet" href="/staysafe.css">
-            <script src="/header.js"></script>
+            <link alt="stylesheet" href="../static/staysafe.css">
+            <script src="../static/header.js"></script>
         </head>
         <style>
 
@@ -54,11 +54,10 @@ header.innerHTML = `
                     <p>Learn more</p>
                 </div>
                 <div class="folders" id="URLhistory">
-                    <img src= "{{ url_for('static', filename=''}}" alt="URL History" onclick="URLhistory()">
+                    <img src= "https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL History" onclick="URLhistory()">
                     <p>URL history</p>
                 </div>
             </div>
         </body>
-
     </html>
 `
