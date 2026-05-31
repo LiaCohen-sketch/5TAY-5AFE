@@ -13,3 +13,8 @@ def URLcheck():
 @app.route('/api/learnMore')
 def URLcheck():
     return render_template('learnMore.html')
+
+app = Flask(__name__)
+
+if __name__ == '__main__':
+    app.run(debug=True)
