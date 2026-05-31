@@ -46,6 +46,7 @@ header.innerHTML = `
             <div id="header-container">
                 <div class="folders" id="urlChecker">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL Checker" onclick="URLcheck()">
+                    <p>URL checker</p>
                 </div>
                 <div class="folders" id="URLinfo">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL Info" onclick="URLinfo()">
