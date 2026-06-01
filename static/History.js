@@ -19,15 +19,11 @@ function escapeHtml(text) {
   console.log(URL);
   console.log(problems);
 
-  async function addURL(url, problems) {
-    URLs = [{
-        "url": url,
-        "problems": problems
-    }]
-  }
+function saveURLsToStorage() {
+    const data = localStorage.getItem(STORAGE_KEY);
+    return data ? JSON.parse(data) : [];
+}
 
-  function loadURLs() {
-    const storedURLs = localStorage.getItem(STORAGE_KEY);
-    if (!storedURLs) return JSON.parse("");
-    URLs = JSON.parse(storedURLs);
-  }
+function addURL(url) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(url));
+}
