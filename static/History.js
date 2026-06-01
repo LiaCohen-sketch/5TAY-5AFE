@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const STORAGE_KEY = "URLs";
 
-const URL = document.getElementById("URLs");
-const problems = document.getElementById("problems");
+const bodyEl = document.getElementById("history-body");
+const URL = document.getElementById("URL");
+const Problems = document.getElementById("Problems");
 
 function escapeHtml(text) {
     const div = document.createElement("div");
@@ -17,7 +18,7 @@ function escapeHtml(text) {
   }
 
   console.log(URL);
-  console.log(problems);
+  console.log(Problems);
 
 function saveURLsToStorage() {
     const data = localStorage.getItem(STORAGE_KEY);
@@ -26,4 +27,28 @@ function saveURLsToStorage() {
 
 function addURL(url) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(url));
+}
+
+function renderURLs() {
+    if (!URL || !Problems) return;
+
+  msgEl.textContent = "";
+  detailsCard.style.display = "none";
+
+  if (!URLs.length) {
+    URL.innerHTML = `<tr><td colspan="6">אין קישורים עדיין</td></tr>`;
+    return;
+  }
+
+  bodyEl.innerHTML = URLs
+  .slice()
+  .reverse()
+  .map(
+    (s)=> `<tr>
+    <td>${escapeHtml(s.url)}</td>
+    <td>${escapeHtml(s.problems)}</td>
+    </tr>`
+  )
+  .join("");
+
 }
