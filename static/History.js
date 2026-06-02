@@ -1,5 +1,3 @@
-console.log('History page loaded successfully!');
-
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
 });
@@ -25,8 +23,15 @@ function saveURLsToStorage() {
     return data ? JSON.parse(data) : [];
 }
 
+function loadURLsFromStorage() {
+  urls = [{
+    url: "https://www.google.com",
+    problems: "No problems"
+  }]
+}
+
 function addURL(url) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(url));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(urls));
 }
 
 function renderURLs() {
@@ -51,4 +56,12 @@ function renderURLs() {
   )
   .join("");
 
+}
+
+async function loadStoriesFromServer() {
+  const res = await fetch("/api/urls");
+  urlsFromServer = await res.json();
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(urlsFromServer));
+  console.log(urlsFromServer);
+  renderURLs();
 }
