@@ -15,10 +15,12 @@ body {
 }
 
 .Tabs{
-    background-image: url('images/TabsBackground.png');
+    background-image: url('https://i.pinimg.com/474x/b6/d6/be/b6d6be932f59e47fac84f49d89f3f96d.jpg');
     margin-top:-5vw;
     margin-left:20vw;
-    width:52%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:60vw;
     height:39vw;
 }
 
@@ -28,7 +30,7 @@ h1 {
   font-weight: 900;
   color: #000000;
   /*text-align: center;*/
-  margin-top: 150px;
+  margin-top: 130px;
   margin-left: 10px;
   line-height: 0.5em;
 }
