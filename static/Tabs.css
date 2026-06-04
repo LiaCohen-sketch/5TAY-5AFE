@@ -16,7 +16,7 @@ body {
 
 .Tabs {
   background-color: pink;
-  margin-top: -13vw;
+  margin-top: -5vw;
   margin-left: 20vw;
   width: 52%;
   height: 39vw;
@@ -27,8 +27,8 @@ h1 {
   font-size: 60px;
   font-weight: 900;
   color: #000000;
-  text-align: center;
-  margin-top: 250px;
+  /*text-align: center;*/
+  margin-top: 150px;
   margin-left: 10px;
   line-height: 0.5em;
 }
