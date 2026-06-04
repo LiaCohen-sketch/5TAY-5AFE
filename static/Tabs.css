@@ -15,18 +15,20 @@ body {
 }
 
 .Tabs {
-  background-image: url('https://i.pinimg.com/474x/b6/d6/be/b6d6be932f59e47fac84f49d89f3f96d.jpg');
+  background-image: url("https://i.pinimg.com/474x/b6/d6/be/b6d6be932f59e47fac84f49d89f3f96d.jpg");
   margin-top: -5vw;
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: 20vw;
-  width: 52%;
-  height: 39vw;
+  width: 57%;
+  height: 43vw;
 }
 
-h1, h3 , h2 {
-    padding-left: 2vw;
-    padding-right: 2vw;
+h1,
+h3,
+h2 {
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 h1 {
