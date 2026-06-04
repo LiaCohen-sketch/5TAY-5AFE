@@ -38,7 +38,7 @@ function URLtoList(urlFromLS){
   document.getElementById("URLlist").innerHTML = URLsaver;
 }
 
-function addURLsToStorage() {
+/*function addURLsToStorage() {
   localStorage.setItem("urls" , JSON.stringify([
     {
       "URL":"https:/www.google.com",
@@ -54,6 +54,7 @@ function addURLsToStorage() {
 }
  /* לקיחת URL מהמודל ולשים בלוקלסטורג'*/
 function addURL(url) {
+  const input = document.getElementById("url-input");
   localStorage.setItem("urls", JSON.stringify(url));
   URLtoList("urls");
 }
@@ -91,4 +92,5 @@ async function loadURLsFromServer() {
   renderURLs();
 }
  
+/*
 addURLsToStorage()
