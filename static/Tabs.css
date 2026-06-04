@@ -15,7 +15,7 @@ body {
 }
 
 .Tabs{
-    background-color: pink;
+    background-image: url('images/TabsBackground.png');
     margin-top:-5vw;
     margin-left:20vw;
     width:52%;
