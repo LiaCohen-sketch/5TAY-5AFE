@@ -7,21 +7,19 @@ html {
 }
 
 body {
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100%;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100%;
 }
 
-.Tabs{
-    background-image: url('https://i.pinimg.com/474x/b6/d6/be/b6d6be932f59e47fac84f49d89f3f96d.jpg');
-    margin-top:-5vw;
-    margin-left:20vw;
-    background-repeat: no-repeat;
-    background-size:cover;
-    width:60vw;
-    height:39vw;
+.Tabs {
+  background-color: pink;
+  margin-top: -5vw;
+  margin-left: 20vw;
+  width: 52%;
+  height: 39vw;
 }
 
 h1, h3 , h2 {
@@ -31,18 +29,18 @@ h1, h3 , h2 {
 
 h1 {
   font-family: "Pixelify Sans";
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 900;
   color: #000000;
   /*text-align: center;*/
-  margin-top: 130px;
+  margin-top: 150px;
   margin-left: 10px;
   line-height: 0.5em;
 }
 
 h3 {
   font-family: "Pixelify Sans";
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 900;
   color: #000000;
   text-align: center;
