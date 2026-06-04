@@ -12,11 +12,6 @@ body {
     height: 100%;
 }
 
-*,
-*::before,
-*::after {
-    cursor: inherit;
-}
 
 h1 {
     font-family: 'Pixelify Sans';
