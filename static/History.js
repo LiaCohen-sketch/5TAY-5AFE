@@ -38,7 +38,7 @@ function URLtoList(urlFromLS){
   document.getElementById("URLlist").innerHTML = URLsaver;
 }
 
-/*function addURLsToStorage() {
+function addURLsToStorage() {
   localStorage.setItem("urls" , JSON.stringify([
     {
       "URL":"https:/www.google.com",
@@ -90,5 +90,5 @@ async function loadURLsFromServer() {
   console.log( URLFromServer);
   renderURLs();
 }
- /*
+ 
 addURLsToStorage()
