@@ -1,8 +1,3 @@
-console.log('5tay 5afe app loaded successfully!');
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded and parsed');
-});
 
 
 function URLhistory(){
