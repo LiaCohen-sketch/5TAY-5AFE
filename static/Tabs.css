@@ -24,6 +24,11 @@ body {
     height:39vw;
 }
 
+h1, h3 , h2 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
 h1 {
   font-family: "Pixelify Sans";
   font-size: 100px;
