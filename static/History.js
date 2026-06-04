@@ -24,7 +24,21 @@ function saveURLsToStorage() {
     return data ? JSON.parse(data) : [];
 }
 
-function loadURLsFromStorage() {
+function URLtoList(urlFromLS){
+  const getInfo = JSON.parse(localStorage.getItem(urlFromLS));
+
+  let URLsaver = "";
+  for (let i = 0; i < getInfo.length; i++){
+    URLsaver += "<p>URL : " + getInfo[i].URL + "</p>";
+    URLsaver += "<p>Problems : " + getInfo[i].Problems + "</p>";
+
+    URLsaver += "<hr>";
+  }
+
+  document.getElementById("URLlist").innerHTML = URLsaver;
+}
+
+/*function addURLsToStorage() {
   localStorage.setItem("urls" , JSON.stringify([
     {
       "URL":"https:/www.google.com",
@@ -36,12 +50,14 @@ function loadURLsFromStorage() {
     }
 
   ]))
-  JSON.parse(localStorage.getItem("urls"));
+  URLtoList("urls");
+}
+ /* לקיחת URL מהמודל ולשים בלוקלסטורג'*/
+function addURL(url) {
+  localStorage.setItem("urls", JSON.stringify(url));
+  URLtoList("urls");
 }
 
-function addURL(url) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(url));
-}
 
 function renderURLs() {
     if (!URL || !Problems) return;
@@ -67,12 +83,12 @@ function renderURLs() {
 
 }
 
-async function loadStoriesFromServer() {
+async function loadURLsFromServer() {
   const res = await fetch("/api/urls");
   URLFromServer = await res.json();
   localStorage.setItem(STORAGE_KEY, JSON.stringify( URLFromServer));
   console.log( URLFromServer);
   renderURLs();
 }
-
-loadURLsFromStorage()
+ /*
+addURLsToStorage()
