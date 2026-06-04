@@ -5,11 +5,19 @@ html {
 }
 
 body {
-    background-image: url('images/TabsBackground.png');
+    background-image: url('images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     height: 100%;
+}
+
+.Tabs{
+    background-color: pink;
+    margin-top:-5vw;
+    margin-left:20vw;
+    width:52%;
+    height:39vw;
 }
 
 h1 {
