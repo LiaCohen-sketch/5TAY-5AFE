@@ -1,13 +1,15 @@
 console.log('History page loaded successfully!');
 
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
+  renderURLs();
 });
 
 
 const STORAGE_KEY = "urls";
 
-const bodyEl = document.getElementById("history-body");
+const bodyEl = document.getElementById("historyBody");
 /*
 const URL = document.getElementById("url");
 const Problems = document.getElementById("Problems");
@@ -54,24 +56,26 @@ function URLtoList(urlFromLS){
 }
  /* לקיחת URL מהמודל ולשים בלוקלסטורג'*/
 function addURL(url) {
-  const input = document.getElementById("url-input");
-  localStorage.setItem("urls", JSON.stringify(url));
-  URLtoList("urls");
+  const urls = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+  urls.push(url);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(urls));
+  renderURLs();
 }
 
+function probFound() {
+  const pblm = await fetch ("/")
+}
 
 function renderURLs() {
-    if (!URL || !Problems) return;
+  if (!bodyEl) return;
 
-  msgEl.textContent = "";
-  detailsCard.style.display = "none";
+  const urls = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
 
-  if (!URLs.length) {
-    URL.innerHTML = `<tr><td colspan="6">אין קישורים עדיין</td></tr>`;
+  if (urls.length === 0) {
+    bodyEl.innerHTML = `<tr><td colspan="2">אין קישורים עדיין</td></tr>`;
     return;
   }
-
-  bodyEl.innerHTML = URLs
+  bodyEl.innerHTML = urls
   .slice()
   .reverse()
   .map(
