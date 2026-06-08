@@ -7,6 +7,41 @@
         <title>URL History</title>
     </head>
 
+    <style>
+        tr{
+            font-size:30px;
+            width:100%;
+            font-family: 'Pixelify Sans';
+        }
+        .list{
+            font-weight: 900;
+            color: #000000;
+            /*text-align: center;*/
+            margin-top: 1.5px;
+            margin-left: 20px;
+            padding-left: 20px;
+            padding-right: 40px;
+        }
+
+        .urlList{
+            margin-top: 1.5px;
+            margin-left: 10vw;
+            padding-left: 20px;
+            padding-right: 40px;
+            gap:10px;        
+        }
+
+        #historyBody{
+            color: #000000;
+            /*text-align: center;*/
+            margin-top: 1.5px;
+            margin-left: 20px;
+            padding-left: 20px;
+            padding-right: 40px;          
+            
+        }
+    </style>
+
     <body>
         <header id="header"></header>
         <script src="../static/header.js"></script>
@@ -14,13 +49,12 @@
         <div id="historyWindow" class="Tabs">
             <section id="section">
                 <h1>URL History</h1>
-                    <h2 id="URLlist"></h2>
                     <div class=urlList id="urllist">
                        <table>
                         <thead>
                             <tr>
-                                <th>URLs</th>
-                                <th>Problem(s)</th>
+                                <th id="url" class="list">URLs</th>
+                                <th id="prob" class="list">Problem(s)</th>
                             </tr>
                         </thead>
                         <tbody id="historyBody">
