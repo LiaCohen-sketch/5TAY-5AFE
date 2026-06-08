@@ -26,7 +26,7 @@ if (header) {
         top: 0;
         font-size:24px;
         color:white;
-        shadow-box:3px 3px 3px black;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
         font-family:'Pixelify Sans';
         right: 0;
         z-index: 1000;
