@@ -57,7 +57,7 @@ if (header) {
     "<p>URL history</p>" +
     "</div>" +
     '<div class="folders"  id="Homepage">' +
-    '<img  src="https://static.vecteezy.com/system/resources/thumbnails/060/657/124/small/pixel-art-retro-computer-isolated-vintage-technology-icon-for-gaming-web-design-nostalgia-branding-digital-art-tech-blog-graphics-png.png" alt="Homepage" onclick="URLhome()">' +
+    '<img style = "outline: none; background: none;" src="/static/images/Homepagelogo.png" alt="Homepage" onclick="URLhome()">' +
     "<p>Homepage</p>" +
     "</div>" +
     "</div>";
