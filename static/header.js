@@ -23,7 +23,7 @@ if (header) {
     "#header-container {" +
     "display: flex;" +
     "flex-direction: column;" +
-    "gap: 20px;" +
+    "gap: 10px;" +
     "float: right;" +
     "padding: 24px;" +
     "position: fixed;" +
