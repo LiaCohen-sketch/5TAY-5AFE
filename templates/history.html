@@ -29,13 +29,47 @@
             padding-left: 20px;
             padding-right: 40px;
             gap:10px;        
+
         }
 
         #blockList{
-            overflow-y: auto;
             overflow-x: auto;
-            max-height:38vw;
-            max-width: 56%;
+            overflow-y: auto;
+            max-height: 18vw;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #blockList table{
+            width: 100%;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #blockList table{
+            width: 100%;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #blockList table{
+            width: 100%;
+            max-width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        #blockList th:first-child,
+        #blockList td:first-child{
+            width: 35%;
+        }
+
+        #blockList th:last-child,
+        #blockList td:last-child{
+            width: 35%;
         }
 
         #historyBody{
@@ -58,21 +92,18 @@
             <section id="section">
                 <h1>URL History</h1>
                     <div class=urlList id="urllist">
-                       <table>
-                        <thead>
-                            <tr>
-                                <th id="url" class="list">URLs</th>
-                                <th id="prob" class="list">Problem(s)</th>
-                            </tr>
-                        </thead>
-                            <div id="blockList">
-                                <tbody id="historyBody">
-
-                                </tbody>
-                            </div>
-                       </table>
+                        <div id="blockList">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="url" class="list">URLs</th>
+                                        <th id="prob" class="list">Problem(s)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="historyBody"></tbody>
+                            </table>
+                        </div>
                     </div>
-                </table>
             </section>
         </div>
 
@@ -80,5 +111,6 @@
 
     </body>
 </html>
+
 
 <img src="/static/" alt="">
