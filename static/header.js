@@ -24,6 +24,10 @@ if (header) {
         padding: 60px;
         position: fixed;
         top: 0;
+        font-size:24px;
+        color:white;
+        shadow=box:3px 3px 3px black;
+        font-family:'Pixelify Sans';
         right: 0;
         z-index: 1000;
       }
