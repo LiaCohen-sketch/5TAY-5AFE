@@ -111,8 +111,8 @@ function renderResult(result) {
 }
 
 
-async function runCheck(url) {
-  const resultsEl = document.getElementById("urllist");
+async function runCheckAndSave(url) {
+  const resultsEl = document.getElementById("results");
   resultsEl.innerHTML = "<p>Checking URL...</p>";
 
   const response = await fetch("/api/predict", {
@@ -127,31 +127,15 @@ async function runCheck(url) {
   }
 
   resultsEl.innerHTML = data.results.map(renderResult).join("");
-}
 
-async function main() {
-  const form = document.getElementById("url-form");
-  const input = document.getElementById("url-input");
-  const resultsEl = document.getElementById("results");
-
-  if (!form || !input || !resultsEl) {
-    return;
-  }
-
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const url = input.value.trim();
-    if (!url) {
-      resultsEl.innerHTML = "<p>Please enter a URL.</p>";
-      return;
-    }
-
-    try {
-      await runCheck(url);
-    } catch (error) {
-      resultsEl.innerHTML = `<p>Failed to check URL: ${escapeHtml(error.message)}</p>`;
-    }
+  data.results.forEach((result) => {
+    addURL({
+      URL: result.url,
+      Problems: `${result.phishing_percent}%`,
+    });
   });
 }
 
-document.addEventListener("DOMContentLoaded", main);
+document.addEventListener("DOMContentLoaded", () => {
+  runCheck = runCheckAndSave;
+});
