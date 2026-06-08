@@ -44,6 +44,11 @@ if (header) {
       <div class="folders" id="URLhistory">
         <img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL History" onclick="URLhistory()">
         <p>URL history</p>
+        
+      </div>
+      <div class="folders" id="URLinfo">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL Info" onclick="URLinfo()">
+        <p>Homepage</p>
       </div>
     </div>
   `;
