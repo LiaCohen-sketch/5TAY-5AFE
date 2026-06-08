@@ -56,8 +56,8 @@ if (header) {
     '<img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="URL History" onclick="URLhistory()">' +
     "<p>URL history</p>" +
     "</div>" +
-    '<div class="folders" id="Homepage">' +
-    '<img src="https://static.vecteezy.com/system/resources/thumbnails/078/371/825/small/open-yellow-file-folder-pixel-art-icon-for-data-storage-png.png" alt="Homepage" onclick="URLhome()">' +
+    '<div class="folders"  id="Homepage">' +
+    '<img  src="https://static.vecteezy.com/system/resources/thumbnails/060/657/124/small/pixel-art-retro-computer-isolated-vintage-technology-icon-for-gaming-web-design-nostalgia-branding-digital-art-tech-blog-graphics-png.png" alt="Homepage" onclick="URLhome()">' +
     "<p>Homepage</p>" +
     "</div>" +
     "</div>";
