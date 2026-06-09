@@ -32,15 +32,21 @@ button:hover,
 
 .Xplain-container{
     text-align:center;
-    width:55vw;
+    width:40vw;
     margin:0 auto;
     margin-top:-40px;
     font-family:arial;
-    background-color:white;
     padding:3px;
+    border-radius:5px;
 }
 
-
+#Xplane1{
+    background-color:rgba(250, 250, 250, 0.5);
+    padding:5px;
+}
 #Xplane2{
-font-size:22px;
+    font-size:22px;
+    text-shadow:0.3px 0.3px 0.3px black;
+    background-color:rgba(250, 250, 250, 0.5);
+    padding:5px;
 }
