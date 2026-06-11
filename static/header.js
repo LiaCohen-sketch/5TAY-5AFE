@@ -57,8 +57,8 @@ if (header) {
     "<p>URL history</p>" +
     "</div>" +
     '<div class="folders"  id="Homepage">' +
-    '<img style = "outline: none; background: none;" src="/static/images/Homepagelogo.png" alt="Homepage" onclick="URLhome()">' +
-    "<p>Homepage</p>" +
+    '<img style = "outline: none; background: none; width: 180px; height: 140px; margin-top:-20px; margin-left:-45px" src="https://64.media.tumblr.com/fda654985437a7b2664e5833e086c69b/0b9b5160404412fb-f5/s540x810/43cf0d594a16ef9fb0449eb89883009e9276f8dd.png" alt="Homepage" onclick="URLhome()">' +
+    '<p style = "margin-top: -20px;" >Homepage</p>' +
     "</div>" +
     "</div>";
 }
