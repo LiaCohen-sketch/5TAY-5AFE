@@ -97,7 +97,7 @@ async function loadURLsFromServer() {
 addURLsToStorage()
 
 
-להבין:*/
+*/
 
 function renderResult(result) {
   const risk =
